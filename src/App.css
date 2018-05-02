@@ -1,0 +1,147 @@
+body{
+  font-family: 'Pacifico', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ff4500;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 800px;
+  margin: 30px auto;
+}
+
+.home-container{
+  text-align: center;
+}
+
+.home-container > h1{
+  margin-bottom: 90px;
+  font-size: 4rem;
+}
+
+.nav{
+  display:flex;
+  justify-content: space-between;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.nav ul li{
+  color: black;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+
+.btn{
+  border: none;
+  padding: 10px 40px;
+  background-color: black;
+  color: white;
+  font-size: 27px;
+  border-radius: 5px;
+}
+
+button:disabled{
+  background-color: #eee;
+  color: black;
+}
+
+.popular-links{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.popular-rank {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.battle-container{
+  text-align: center;
+}
+
+
+.battle{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 300px;
+}
+
+.battle-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.battle-form > label{
+  font-size: 2rem;
+}
+
+.battle-form > input {
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.battle-form > button{
+  font-family: inherit;
+}
+.btn-battle{
+  margin: 0 auto;
+}
+.reset{
+  color: orangered;
+  cursor: pointer;
+}
+
+.results-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.results-card{
+  min-width: 400px;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
