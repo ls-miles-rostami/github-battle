@@ -117,6 +117,7 @@ export default class Results extends Component {
       this.props.history.location.search
     );
     const playerOneNameFixed = playerNames['?playerOneName'].split('?').toString()
+    console.log(playerNames.playerTwoName, playerOneNameFixed)
     this.battle([playerOneNameFixed, playerNames.playerTwoName]).then(players => {
       if (players === null) {
         return this.setState({
