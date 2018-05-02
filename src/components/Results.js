@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import queryString from 'query-string';
 import ReactLoading from 'react-loading';
 import keys from '../config/keys';
 import {Link} from 'react-router-dom';
 import PlayerPreview from './PlayerPreview';
-
+import qs from 'qs';
 
 export const Profile = (props) => {
   const info = props.info
@@ -113,10 +112,12 @@ export default class Results extends Component {
   };
 
   componentDidMount() {
-    const { playerOneName, playerTwoName } = queryString.parse(
+
+    const playerNames = qs.parse(
       this.props.history.location.search
     );
-    this.battle([playerOneName, playerTwoName]).then(players => {
+    const playerOneNameFixed = playerNames['?playerOneName'].split('?').toString()
+    this.battle([playerOneNameFixed, playerNames.playerTwoName]).then(players => {
       if (players === null) {
         return this.setState({
           error:
